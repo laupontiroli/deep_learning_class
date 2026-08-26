@@ -1,42 +1,30 @@
-site_name: Template de Entrega
-site_author: Sandmann, H.
-site_url: https://hsandmann.github.io/documentation.template
-repo_url: https://github.com/hsandmann/documentation.template
-repo_name: github/documentation.template
+site_name: Entregas de Deep Learning e Redes Neurais
+site_author: Laura Pontiroli Machado
+site_url: https://laupontiroli.github.io/deep_learning_class
+repo_url: https://github.com/laupontiroli/deep_learning_class
+repo_name: github/deep_learning_class
 
 theme:
   name: material
+  font:
+    text: Quicksand
+    code: JetBrains Mono
   palette:
-    # primary: grey
-    # Light mode
-    - scheme: default
-      primary: grey
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      primary: grey
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: grey
+      scheme: default
+      primary: pink
+      accent: purple
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/weather-sunny
+        name: Modo escuro
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: grey
       scheme: slate
+      primary: deep purple
+      accent: pink
       toggle:
-        icon: material/toggle-switch
-        name: Switch to system preference
+        icon: material/weather-night
+        name: Modo claro
   features:
     - content.code.copy
     - content.code.select
@@ -48,22 +36,24 @@ theme:
     - navigation.path
     - navigation.tracking
     - navigation.expand
+    - navigation.footer
+    - toc.follow
   icon:
-    # logo: assets/images/devops
     admonition:
-      note: fontawesome/solid/note-sticky
-      abstract: fontawesome/solid/book
-      info: fontawesome/solid/circle-info
-      tip: fontawesome/solid/bullhorn
-      success: fontawesome/solid/check
-      question: fontawesome/solid/circle-question
-      warning: fontawesome/solid/triangle-exclamation
-      failure: fontawesome/solid/bomb
-      danger: fontawesome/solid/skull
-      bug: fontawesome/solid/robot
-      example: fontawesome/solid/flask
-      quote: fontawesome/solid/quote-left
+      note: material/notebook-heart-outline
+      abstract: material/book-open-page-variant-outline
+      info: material/information-outline
+      tip: material/lightbulb-on-outline
+      success: material/check-circle-outline
+      question: material/help-circle-outline
+      warning: material/alert-outline
+      failure: material/close-circle-outline
+      danger: material/skull-outline
+      bug: material/bug-outline
+      example: material/flask-outline
+      quote: material/format-quote-open
 
+      
 markdown_extensions:
   - admonition
   - attr_list
@@ -110,7 +100,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/documentation.template
+      repository: laupontiroli/deep_learning_class
       branch: main
   - search
   - badges
